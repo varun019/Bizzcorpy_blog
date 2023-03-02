@@ -15,11 +15,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <div class="container-fluid">
         <div class="img-fluid bg">
             <nav class="navbar navbar-expand-lg mx-5 mb-5">
-                <a class="navbar-brand tab text-white" href="#" style="font-weight: bolder;">BIZZCORPY</a>
+                <a class="navbar-brand text-white tab" href="#" style="font-weight: bolder;">BIZZCORPY</a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -27,8 +27,8 @@
                 </button>
                 <div class="navbar-collapse collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-2">
-                        <li class="nav-item dropdown active1">
-                            <a class="nav-link dropdown-toggle active text-white" href="#" role="button"
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle active1 text-white" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 HOME
                             </a>
@@ -42,7 +42,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style="color: white;" href="#" role="button"
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 PAGES
                             </a>
@@ -56,7 +56,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" style="color: white;" href="#" role="button"
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 PROJECTS
                             </a>
@@ -88,16 +88,18 @@
                         </li>
                     </ul>
                 </div>
-                <form class="d-flex" role="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <form class="d-flex align-items-center" role="search">
+                    <i class="fa-solid fa-magnifying-glass text-white fa-2x me-3"></i>
+                    <button type="button" class="btn btn-outline-secondary text-white me-3">Get A Quote</button>
                 </form>
-                <button type="button" class="btn btn-outline-secondary text-white">Get A Quote</button>
+                <!-- <button type="button" class="btn btn-outline-secondary text-white me-3">Get A Quote</button> -->
             </nav>
             <div class="row ms-4 py-5">
                 <div class="col-sm-6 col-lg-6">
                     <button class="btn btn-secondary b1">Best Solution Company</button>
-                    <h1>The best solution <br> is to choose us</h1>
-                    <p class="description">If you are going to use a passage of lorem Ipsum,you need to be sure there
+                    <h1 class="pt-3 d-flex text-white text-start fw-bolder">The best solution <br> is to choose us</h1>
+                    <p class="text-light text-start d-flex">If you are going to use a passage of lorem Ipsum,you need to
+                        be sure there
                         <br>isn't anything embrassing hidden in the middle of the text.</p>
                 </div>
                 <div>
@@ -106,72 +108,90 @@
             </div>
         </div>
 
-        <div class="mt-4 d-flex justify-content-around flex-wrap">
-            <div class="d-flex justify-content-flex-start align-items-flex-start gap-2 ms-0">
-                <i class="fa-solid fa-location-dot align-items-center"></i>
-                <div class="flex-wrap">
-                    <h5 class="">Address:</h5>
-                    <p class="card-text">1073 W Stephen Ave Clawson</p>
+        <div class="mt-4 row mx-0 text-center">
+            <div class="col-12 col-md-4 d-flex gap-3 ">
+                <i class="fa-solid fa-location-dot align-items-center fa-3x text-primary-emphasis"></i>
+                <div class="flex-wrap text-left">
+                    <h5 class="text-start">Address:</h5>
+                    <p class="fw-semibold">1073 W Stephen Ave Clawson</p>
                 </div>
             </div>
-            <div class="d-flex justify-content-flex-start align-items-flex-start gap-2 ms-0">
-                <i class="fa-solid fa-mobile-screen-button align-items-center"></i>
+            <div class="col-12 col-md-4 d-flex gap-3">
+                <i class="fa-solid fa-mobile-screen-button align-items-center fa-3x text-primary-emphasis"></i>
                 <div class="flex-wrap">
-                    <h5 class="">Call Us:</h5>
-                    <p class="card-text">+1 200-222-4444</p>
+                    <h5 class="text-start">Call Us:</h5>
+                    <p class="fw-semibold">+1 200-222-4444</p>
                 </div>
             </div>
-            <div class="d-flex justify-content-flex-start align-items-flex-start gap-2 ms-0">
-                <i class="fa-sharp fa-solid fa-envelope-open-text align-items-center "></i>
-                <div class="flex-wrap">
-                    <h5 class="">Email:</h5>
-                    <p mailto:class="card-text">bizzcorpy@example.com</p>
+            <div class="col-12 col-md-4 d-flex gap-3">
+                <i class="fa-sharp fa-solid fa-envelope-open-text align-items-center fa-3x text-primary-emphasis"></i>
+                <div class="flex-xs-wrap">
+                    <h5 class="text-start">Email:</h5>
+                    <p class="fw-semibold">bizzcorpy@example.com</p>
                 </div>
             </div>
         </div>
-        <div class="row about-Us">
+        <div class="row mt-5 mx-3">
             <div class="col-sm-6">
-                <h5 class="about mx-3" style="color: royalblue;">About us</h5>
-                <h4>17 Years of experience <br><i style="color:royalblue;">customer</i> satisfaction</h4>
-                <p class="aboutus mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id, dolorum omnis
+                <h5 class="mx-3 text-primary-emphasis">About Us</h5>
+                <h4 class="px-2">17 Years of experience <br><i class="text-primary-emphasis">customer</i> satisfaction
+                </h4>
+                <p class="text-dark fw-normal mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id,
+                    dolorum omnis
                     repellendus magni nobis corporis assumenda sed veniam mollitia laudantium fugiat culpa!</p>
-                <ul class="nav nav-pills mb-3 mx-4" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills mb-3 mx-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                            type="button" role="tab" aria-controls="pills-home" aria-selected="true">Our Vision</button>
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Our Vision</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Our Mission</button>
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Our Mission</button>
                     </li>
                 </ul>
-                <p class="aboutus mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, officiis fuga?
-                    Quia iure quo atque porro nesciunt quas rerum repudiandae mollitia ad saepe id minima,
-                    accusantium
-                    totam laboriosam reprehenderit. Eos.</p>
-                <div class="col-sm-12 col-lg-6 col-xl-4 col-xxl-4 mt-3">
-                    <button type="button" class="btn btn-outline-primary mx-3">Read More</button>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active mx-3" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. At, officiis fuga?
+                        Quia iure quo atque porro nesciunt quas rerum repudiandae mollitia ad saepe id minima,
+                        accusantium
+                        totam laboriosam reprehenderit. Eos.</div>
+                    <div class="tab-pane fade mx-3" id="pills-profile" role="tabpanel"
+                        aria-labelledby="pills-profile-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. At, officiis fuga?
+                        Quia iure quo atque porro nesciunt quas rerum repudiandae mollitia ad saepe id minima,
+                        accusantium
+                        totam laboriosam reprehenderit. Eos.</div>
+
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-outline-primary mx-3">Read More</button>
+                    </div>
+
                 </div>
-                
             </div>
             <div class="col-sm-6 mt-3">
-                <img src="about.jpeg" class="rounded float-end ab img-fluid px-2" alt="...">
+                <img src="about.jpeg" class="img-fluid d-flex mx-2 border rounded" alt="...">
             </div>
         </div>
         <div>
-            <h3 class="text-dark text-center text-decoration-underline mt-5">Our Services</h3>
-            <p class="service-des">It is a long established fact that a reader will be distracted by the readable
+            <div class="under position-relative">
+                <h3 class="text-dark text-center mt-5 ">Our Services</h3>
+            </div>
+            <p class="service-des me-3 justify-content-center text-center fw-normal">It is a long established fact that
+                a reader will be distracted by the readable
                 content of
                 a
                 <br> page when looking at its layout.</p>
         </div>
-        
-        <div class="row c1">
+
+        <div class="row justify-content-center gap-4 my-4">
             <div class="card col-sm-12 col-lg-4 col-xl-3">
                 <img src="s1.jpeg" class="img-fluid" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Trading Ideas</h5>
-                    <p class="card-text">It is a long established fact that a reader will be distracted by the
+                    <h5 class="fw-bolder text-dark text-center">Trading Ideas</h5>
+                    <p class="text-center">It is a long established fact that a reader will be distracted by the
                         readable
                         content of a page when looking at its layout.</p>
                     <button type="button" class="btn btn-outline-primary">Read More <i
@@ -182,7 +202,7 @@
             <div class="card col-sm-12 col-lg-4 col-xl-3">
                 <img src="s2.jpeg" class="img-fluid" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Business Strategy</h5>
+                    <h5 class="fw-bolder text-dark text-center">Business Strategy</h5>
                     <p class="card-text">It is a long established fact that a reader will be distracted by the
                         readable
                         content of a page when looking at its layout.</p>
@@ -194,7 +214,7 @@
             <div class="card col-sm-12 col-lg-4 col-xl-3">
                 <img src="s3.jpeg" class="img-fluid" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Project Architecture</h5>
+                    <h5 class="fw-bolder text-dark text-center">Project Architecture</h5>
                     <p class="card-text">It is a long established fact that a reader will be distracted by the
                         readable
                         content of a page when looking at its layout.</p>
@@ -205,23 +225,23 @@
             </div>
         </div>
 
-        <div class="row c1 pb-5">
+        <div class="row c1 pb-5 justify-content-center gap-4">
             <div class="card col-sm-12 col-lg-4 col-xl-3">
                 <img src="s4.jpeg" class="img-fluid" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Investment Consulting</h5>
+                    <h5 class="fw-bolder text-dark text-center">Investment Consulting</h5>
                     <p class="card-text">It is a long established fact that a reader will be distracted by the
                         readable
                         content of a page when looking at its layout.</p>
                     <button type="button" class="btn btn-outline-primary">Read More <i
                             class="fa-solid fa-arrow-right"></i>
                     </button>
-                </div>
+                </div>>
             </div>
             <div class="card col-sm-12 col-lg-4 col-xl-3">
                 <img src="s5.jpeg" class="img-fluid" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Dealership Agreement</h5>
+                    <h5 class="fw-bolder text-dark text-center">Dealership Agreement</h5>
                     <p class="card-text">It is a long established fact that a reader will be distracted by the
                         readable
                         content of a page when looking at its layout.</p>
@@ -233,8 +253,8 @@
             <div class="card col-sm-12 col-lg-4 col-xl-3">
                 <img src="s6.jpeg" class="img-fluid" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Business Partnership</h5>
-                    <p class="card-text">It is a long established fact that a reader will be distracted by the
+                    <h5 class="fw-bolder text-dark text-center">Business Partnership</h5>
+                    <p class="text-center">It is a long established fact that a reader will be distracted by the
                         readable
                         content of a page when looking at its layout.</p>
                     <button type="button" class="btn btn-outline-primary">Read More <i
@@ -243,40 +263,50 @@
                 </div>
             </div>
         </div>
-        <div class="product-in">
-            <h3 class="text-white prod">International Customer <br>Potential</h3>
-            <p class="product-about">It is a long established fact that a reader will be distracted by the readable
+        <div class="h-auto bg-primary">
+            <div class="under1 text-white position-relative">
+                <h3 class="text-white text-center pt-5 mb-5">
+                    International Customer <br>
+                    <p>Potential</p>
+                </h3>
+            </div>
+            <p class="d-flex text-light text-center justify-content-center fw-bold">It is a long established fact
+                that a reader will be distracted by the readable
                 content
                 of a
                 <br>page when looking at its layout.</p>
-            <div class="row product-info">
-                <div class="card col-sm-12 col-lg-4 col-xl-3">
-                    <img src="i1.jpeg" class="img-fluid" alt="...">
+            <div class="row d-flex justify-content-center gap-5">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="i1.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Domestic Production Potential</h5>
-                        <p class="num">650</p>
-                        <p class="unit">BILLION/TONS</p>
+                        <h5 class="card-title text-center">Domestic Production Potential</h5>
+                        <p class="card-text text-center text-primary-emphasis fw-bolder fs-3">650</p>
+                        <p class="text-center">BILLION/TONS</p>
                     </div>
                 </div>
-                <div class="card col-sm-12 col-lg-4 col-xl-3">
-                    <img src="i2.jpeg" class="img-fluid" alt="...">
+                <!-- <div class="card col-sm-12 col-lg-4 col-xl-3 my-5"> -->
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="i2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Overseas Production Credential</h5>
-                        <p class="num">780</p>
-                        <p class="unit">BILLION/TONS</p>
+                        <h5 class="card-title text-center">Overseas Production Credential</h5>
+                        <p class="card-text text-center text-primary-emphasis fw-bolder fs-3">780</p>
+                        <p class="text-center">BILLION/TONS</p>
                     </div>
                 </div>
-                <div class="card col-sm-12 col-lg-4 col-xl-3">
-                    <img src="i3.jpeg" class="img-fluid" alt="...">
+                <!-- <div class="card col-sm-12 col-lg-4 col-xl-3 my-5"> -->
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="i3.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">International Production Credential</h5>
-                        <p class="num">950</p>
-                        <p class="unit">BILLION/TONS</p>
+                        <h5 class="card-title text-center">International Production Credential</h5>
+                        <p class="card-text text-center text-primary-emphasis fw-bolder fs-3">950</p>
+                        <p class="text-center">BILLION/TONS</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- <footer class="text-center text-lg-start text-white" style="background: #1c2331;">Company
+</footer> -->
 
 </body>
 
